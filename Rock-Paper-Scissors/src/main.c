@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 char *choices[3] = {"ROCK", "PAPER", "SCISSORS"}; 
 
@@ -34,12 +35,12 @@ int main(){
         p_choice = player_choice(choices);
         
 
-        if(p_choice == choices[0] && pc_choice == choices[2] || //strcmp
-        p_choice == choices[1] && pc_choice == choices[0] ||
-        p_choice == choices[2] && pc_choice == choices[1]){
+        if (strcmp(p_choice, choices[0]) == 0 && strcmp(pc_choice, choices[2]) == 0 ||
+            strcmp(p_choice, choices[1]) == 0 && strcmp(pc_choice, choices[0]) == 0 ||
+            strcmp(p_choice, choices[2]) == 0 && strcmp(pc_choice, choices[1]) == 0){
             printf("You won!\n");
             player_score++;
-        }else if(p_choice == pc_choice){
+        }else if(strcmp(p_choice, pc_choice) == 0){
             printf("It's a tie!\n");
         }else{
             printf("You lost!\n");
