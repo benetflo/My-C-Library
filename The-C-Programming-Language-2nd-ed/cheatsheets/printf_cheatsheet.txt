@@ -1,0 +1,21 @@
+%d           ==       print as decimal integer
+
+%6d          ==       print as decimal integer, at least 6 chars wide
+
+%f           ==       print as floating point
+
+%6f          ==       print as floating point, at least 6 chars wide
+
+%.2f         ==       print as floating point, 2 chars after decimal point
+
+%6.2f        ==       print as floating point, at least 6 wide and 2 after decimal point
+
+%o           ==       print as octal
+
+%x           ==       print as hexadecimal
+
+%c           ==       print as char
+
+%s           ==       print as c-string
+
+%%           ==       print % itself
