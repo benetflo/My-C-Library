@@ -16,8 +16,17 @@ Total number of duplicate elements found in the array is : 1
 
 */
 
-int main(){
+size_t arr_duplicates(void* arr, size_t elementSize, size_t arr_len){
 
+    
+
+
+    return count;
+
+}
+
+
+int main(){
     
     return 0;
 }
