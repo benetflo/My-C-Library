@@ -6,8 +6,9 @@
 
 
 
-size_t strlen(const char* string);
-
+size_t str_len(const char* string);
+size_t str_ocurr(const char*, char c);
+size_t str_has_char(const char* char c);
 
 
 
